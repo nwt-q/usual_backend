@@ -49,7 +49,7 @@ oa相关概念参考：
 
 项目主体骨架基于`Spring Cloud Alibaba`生态体系，使用`MySQL`进行数据持久化管理，采用`Vue3`生态体系与`Element Puls UI`框架完成前端制作，同时项目提供`C++`微服务开发解决方案与集成、使用`Jenkins`实现`CD/CI`。
 
-![architecture](./documents/00、preview-pic/architecture.jpg)
+![architecture](./doc/architecture.jpg)
 
 ## 项目结构说明
 > `zero-one-09oa`  
@@ -241,6 +241,4 @@ https://docs.spring.io/spring-data/mongodb/docs/current/reference/html/#requirem
 
 ## 支持一下
 
-如果觉得框架和项目还不错，点个⭐Star，这将是对**01星球**极大的鼓励与支持。
-
-想了解更多关于计算机方向选择、学习建议等相关信息，可以关注[**01星球B站主页~**](https://space.bilibili.com/1653229811?spm_id_from=333.1007.0.0)
+如果觉得框架和项目还不错，点个⭐Star，这将是对**EvLast**极大的鼓励与支持。
