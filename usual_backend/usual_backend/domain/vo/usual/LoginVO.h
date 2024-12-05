@@ -17,26 +17,22 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 */
-#ifndef _LOGINDO_H_
-#define _LOGINDO_H_
 
-#include "../DoInclude.h"
+#ifndef _LOGIN_VO_
+#define _LOGIN_VO_
+
+#include "../../GlobalInclude.h"
+#include "../../dto/usual/LoginDTO.h"
+
+#include OATPP_CODEGEN_BEGIN(DTO)
+
 /**
- * 测试菜单数据库实体
+ * 示例显示JsonVO，用于响应给客户端的Json对象
  */
-class LoginDO
-{
-	//用户名
-	CC_SYNTHESIZE(string, username, Username);
-	// 密码
-	CC_SYNTHESIZE(string, password, Password);
-public:
-	MenuDO() {}
-	MenuDO(string password, string username)
-	{
-		this->password = password;
-		this->username = username;
-	}
+class LoginJsonVO : public JsonVO<LoginDTO::Wrapper> {
+	DTO_INIT(LoginJsonVO, JsonVO<LoginDTO::Wrapper>);
 };
 
-#endif // !_LOGINDO_H_
+#include OATPP_CODEGEN_END(DTO)
+
+#endif // !_SAMPLE_VO_

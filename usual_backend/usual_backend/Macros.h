@@ -1,8 +1,8 @@
 #pragma once
 /*
- Copyright Zero One Star. All rights reserved.
+ Copyright EvLast. All rights reserved.
 
- @Author: awei
+ @Author: EvLast
  @Date: 2022/10/24 23:06:42
 
  Licensed under the Apache License, Version 2.0 (the "License");
