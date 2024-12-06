@@ -30,6 +30,12 @@ class LoginDTO : public oatpp::DTO
 {
 	DTO_INIT(LoginDTO, DTO);
 
+	//唯一teacher_id
+    DTO_FIELD(String, teacher_id);
+    DTO_FIELD_INFO(teacher_id) {
+		info->description = ZH_WORDS_GETTER("login.teacher_id");
+	}
+
 	// 用户名
 	DTO_FIELD(String, username);
 	DTO_FIELD_INFO(username) {

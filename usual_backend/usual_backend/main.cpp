@@ -1,7 +1,7 @@
 /*
  Copyright Zero One Star. All rights reserved.
 
- @Author: awei
+ @Author: EvLast
  @Date: 2022/10/24 23:02:34
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -41,7 +41,7 @@ bool getStartArg(int argc, char* argv[]) {
 	// 数据库连接信息
 	std::string dbUsername = "root";
 	std::string dbPassword = "123456";
-	std::string dbName = "zo_oa";
+	std::string dbName = "performancesorce";
 	std::string dbHost = "127.0.0.1";
 	int dbPort = 3306;
 	int dbMax = 5;

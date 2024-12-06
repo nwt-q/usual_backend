@@ -44,7 +44,7 @@ public:
 	//接口定义------------------------------------------------------------------------------
 	//查询组织所有成员信息
 	ENDPOINT_INFO(queryLogin) {
-		info->summary = "登入授权";
+		info->summary = u8"登入授权";
 		//API_DEF_ADD_AUTH(); 
 		API_DEF_ADD_RSP_JSON(LoginJsonVO::Wrapper);
 		API_DEF_ADD_QUERY_PARAMS(String, "username", ZH_WORDS_GETTER("login.username"), "admin", false);

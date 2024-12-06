@@ -1,9 +1,8 @@
-#pragma once
 /*
  Copyright EvLast. All rights reserved.
 
  @Author: EvLast
- @Date: 2023/02/17 16:25:30
+ @Date: 2022/10/25 14:26:52
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -17,26 +16,17 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 */
-#ifndef _LOGINDO_H_
-#define _LOGINDO_H_
+#include "stdafx.h"
+#include "../LoginMapper.h"
+#include <sstream>
+#include "LoginDAO.h"
 
-#include "../DoInclude.h"
-/**
- * 测试菜单数据库实体
- */
-class LoginDO
+
+list<LoginDO> LoginDAO::selectByName(const string& name)
 {
-	//用户名
-	CC_SYNTHESIZE(string, username, Username);
-	// 密码
-	CC_SYNTHESIZE(string, password, Password);
-public:
-	MenuDO() {}
-	MenuDO(string password, string username)
-	{
-		this->password = password;
-		this->username = username;
-	}
-};
-
-#endif // !_LOGINDO_H_
+	stringstream sql;
+	sql << "SELECT teacher_id, course_id, teacher_power, teacher_name FROM teachers WHERE teacher_name = ?";
+	LoginMapper mapper;
+	string sqlStr = sql.str();
+	return sqlSession->executeQuery<LoginDO, LoginMapper>(sqlStr, mapper, "%s",name);
+}

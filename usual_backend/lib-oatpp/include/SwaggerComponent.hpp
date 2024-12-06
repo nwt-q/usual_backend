@@ -2,7 +2,7 @@
 /*
  Copyright Zero One Star. All rights reserved.
 
- @Author: awei
+ @Author: EvLast
  @Date: 2022/11/24 15:36:33
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -56,9 +56,9 @@ class SwaggerComponent
 			.setTitle(OATPP_SWAGGER_SERVICE_NAME " API interface service")
 			.setDescription("Provide a set of API documents for describing the front-end and back-end interactions of the " OATPP_SWAGGER_SERVICE_NAME)
 			.setVersion("1.0.0")
-			.setContactName("01 Star")
-			.setContactUrl("https://space.bilibili.com/1653229811/?spm_id_from=333.999.0.0")
-			.setContactEmail("01xq@mail.com")
+			.setContactName("EvLast")
+			.setContactUrl("http://evlast.jxoj.top")
+			.setContactEmail("3178146280@qq.com")
 			.setLicenseName("Apache License, Version 2.0")
 			.setLicenseUrl("https://www.apache.org/licenses/LICENSE-2.0")
 			.addSecurityScheme("bearer_auth", ss);
