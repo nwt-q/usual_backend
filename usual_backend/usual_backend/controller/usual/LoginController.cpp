@@ -1,5 +1,5 @@
 #include"LoginController.h"
-#include "../../service/usual/LoginSever.h"
+#include "../../service/usual/LoginSevice.h"
 #include <iostream>
 
 LoginJsonVO::Wrapper LoginController::execQueryLogin(LoginQuery::Wrapper& condtion) {
@@ -12,5 +12,6 @@ LoginJsonVO::Wrapper LoginController::execQueryLogin(LoginQuery::Wrapper& condti
 		res->success(result);
 		return res;
 	}
+	res->success(result);
 	return 	res;
 }

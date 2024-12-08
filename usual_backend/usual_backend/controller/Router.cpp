@@ -20,6 +20,7 @@
 #include "Router.h"
 #include "ApiHelper.h"
 #include "usual/LoginController.h"
+#include "usual/GradesController.h"
 #ifdef HTTP_SERVER_DEMO
 #include "user/UserController.h"
 #include "sample/SampleController.h"
@@ -52,6 +53,7 @@ void Router::initRouter()
 
 	//#TIP :系统扩展路由定义，写在这个后面
 	ROUTER_SIMPLE_BIND(LoginController);
+	ROUTER_SIMPLE_BIND(GradesController);
 }
 
 #ifdef HTTP_SERVER_DEMO

@@ -17,7 +17,7 @@
  limitations under the License.
 */
 #include "stdafx.h"
-#include "../LoginMapper.h"
+#include "../Mappers.h"
 #include <sstream>
 #include "LoginDAO.h"
 
