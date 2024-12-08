@@ -2,3 +2,14 @@ login:
     username: 用户名
     password: 密码
     teacher_id: 教师编号
+    course_id: 课程编号
+    class_id: 班级编号
+grades:
+    course_name: 课程名称
+    name: 学生姓名
+    sex: 性别
+    atrrendance: 出勤
+    class_perfoemance: 课堂表现
+    homework: 作业
+    other: 其他
+    total_score: 总分

@@ -21,7 +21,7 @@
 #define _LOGIN_MAPPER_
 
 #include "Mapper.h"
-#include "../../domain/do/usual/LoginDO.h"
+#include "../domain/do/usual/LoginDO.h"
 
 class LoginMapper : public Mapper<LoginDO>
 {

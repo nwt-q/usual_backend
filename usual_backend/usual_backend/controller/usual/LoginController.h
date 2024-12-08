@@ -61,7 +61,7 @@ public:
 	};
 
 private:
-	// 3.3 演示删除数据
+	// 登入验证
 	LoginJsonVO::Wrapper execQueryLogin(LoginQuery::Wrapper &condtion);
 };
 
